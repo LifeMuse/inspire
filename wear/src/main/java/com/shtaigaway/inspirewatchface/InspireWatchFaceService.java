@@ -65,14 +65,17 @@ public class InspireWatchFaceService extends WatchFace {
                 new DailyInspiration("peace", Color.parseColor("#689F38")),
                 new DailyInspiration("efficient", Color.parseColor("#212121")),
                 new DailyInspiration("beautiful", Color.parseColor("#673AB7")),
-                new DailyInspiration("think", Color.parseColor("#03a9f4")),
+                new DailyInspiration("think big", Color.parseColor("#03a9f4")),
                 new DailyInspiration("team", Color.parseColor("#673ab7")),
                 new DailyInspiration("now", Color.parseColor("#ff5722")),
                 new DailyInspiration("humble", Color.parseColor("#4caf50")),
                 new DailyInspiration("grateful", Color.parseColor("#009688")),
                 new DailyInspiration("teach", Color.parseColor("#3f51b5")),
                 new DailyInspiration("learn", Color.parseColor("#1976D2")),
-                new DailyInspiration("persevere", Color.parseColor("#ffc107"))
+                new DailyInspiration("persevere", Color.parseColor("#ffc107")),
+                new DailyInspiration("push", Color.parseColor("#d32f2f")),
+                new DailyInspiration("fearless", Color.parseColor("#212121")),
+                new DailyInspiration("honesty", Color.parseColor("#388e3c"))
 
         );
         chooseNewDailyInspiration();

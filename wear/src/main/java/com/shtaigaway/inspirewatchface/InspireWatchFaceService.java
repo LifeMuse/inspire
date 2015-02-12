@@ -26,7 +26,7 @@ public class InspireWatchFaceService extends WatchFace {
     public static final int OPTIMAL_WORD_LENGTH = 6;
     private Paint timePaint = new Paint();
     private Paint textPaint = new Paint();
-    private final SimpleDateFormat timeFormat12 = new SimpleDateFormat("hh:mm");
+    private final SimpleDateFormat timeFormat12 = new SimpleDateFormat("h:mm");
     private final SimpleDateFormat timeFormat24 = new SimpleDateFormat("HH:mm");
     private final Date date = new Date();
 
@@ -64,7 +64,16 @@ public class InspireWatchFaceService extends WatchFace {
                 new DailyInspiration("fresh", Color.parseColor("#FBC02D")),
                 new DailyInspiration("peace", Color.parseColor("#689F38")),
                 new DailyInspiration("efficient", Color.parseColor("#212121")),
-                new DailyInspiration("beautiful", Color.parseColor("#673AB7"))
+                new DailyInspiration("beautiful", Color.parseColor("#673AB7")),
+                new DailyInspiration("think", Color.parseColor("#03a9f4")),
+                new DailyInspiration("team", Color.parseColor("#673ab7")),
+                new DailyInspiration("now", Color.parseColor("#ff5722")),
+                new DailyInspiration("humble", Color.parseColor("#4caf50")),
+                new DailyInspiration("grateful", Color.parseColor("#009688")),
+                new DailyInspiration("teach", Color.parseColor("#3f51b5")),
+                new DailyInspiration("learn", Color.parseColor("#1976D2")),
+                new DailyInspiration("persevere", Color.parseColor("#ffc107"))
+
         );
         chooseNewDailyInspiration();
     }
@@ -132,7 +141,7 @@ public class InspireWatchFaceService extends WatchFace {
         textPaint.setTextSize(48 - reduceOffset * 2);
         float textWidth = textPaint.measureText(word);
         float textHeight = measureHeight(word);
-        canvas.drawText(word, getWidth() / 2 - textWidth / 2, getHeight() / 2 + textHeight / 2, textPaint);
+        canvas.drawText(word, getWidth() / 2 - textWidth / 2, getHeight() / 2 + textHeight, textPaint);
     }
 
     @Override
